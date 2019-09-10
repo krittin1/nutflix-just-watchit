@@ -1,6 +1,5 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
+# 01418217/211 Software Construction  #
+# Application for Booking Cinema Ticket: NUTFLIX #
 
 ### What is this repository for? ###
 
