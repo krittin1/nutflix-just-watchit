@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
@@ -12,33 +14,40 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="697.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1029.0" prefWidth="1242.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="100.0" prefWidth="902.0" style="-fx-background-color: black;">
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="100.0" prefWidth="1249.0" style="-fx-background-color: black;">
          <children>
             <Label layoutX="133.0" layoutY="14.0" prefHeight="8.0" prefWidth="80.0" text="showtime" textFill="#e3fc05">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Segoe UI Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="133.0" layoutY="49.0" text="buy ticket" textFill="#eee9e9" />
+            <Label layoutX="133.0" layoutY="49.0" text="buy ticket" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
             <Label layoutX="345.0" layoutY="42.0" text="\@" textFill="#f2eeee" />
-            <Button layoutX="504.0" layoutY="37.0" mnemonicParsing="false" style="-fx-background-color: red;" text="showtime" textFill="#f5e7e7" />
-            <ImageView fitHeight="158.0" fitWidth="218.0" layoutX="-60.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="504.0" layoutY="37.0" mnemonicParsing="false" style="-fx-background-color: red;" text="showtime" textFill="#f5e7e7">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="132.0" fitWidth="172.0" layoutX="-29.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Screenshot%20(34).png" />
                </image>
             </ImageView>
             <MenuButton layoutX="235.0" layoutY="37.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="ประเภทที่นั่ง" textFill="#fcfafa">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" text="ธรรมดา" />
+                <MenuItem mnemonicParsing="false" text="ผสม" />
               </items>
             </MenuButton>
             <MenuButton layoutX="385.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="ระบบฉาย" textFill="#f8f5f5">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" text="4k" />
+                <MenuItem mnemonicParsing="false" text="3D" />
+                  <MenuItem mnemonicParsing="false" text="Premium" />
               </items>
             </MenuButton>
             <Label layoutX="101.0" layoutY="74.0" prefHeight="25.0" prefWidth="84.0" text="Just Watch It" textFill="#ee0d0d">
@@ -53,15 +62,23 @@
                   </Lighting>
                </effect>
                <font>
-                  <Font size="13.0" />
+                  <Font name="Tahoma" size="13.0" />
                </font>
             </Label>
+            <Button layoutX="1053.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Contact" textFill="#f5e7e7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <ImageView fitHeight="254.0" fitWidth="200.0" layoutX="27.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/thumb_2596.jpg" />
          </image>
+         <effect>
+            <Blend />
+         </effect>
       </ImageView>
       <ImageView fitHeight="254.0" fitWidth="203.0" layoutX="217.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -73,29 +90,71 @@
             <Image url="@../images/thumb_2655.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="77.0" layoutY="381.0" mnemonicParsing="false" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
-      <Button layoutX="280.0" layoutY="381.0" mnemonicParsing="false" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2eded" />
-      <Button layoutX="488.0" layoutY="381.0" mnemonicParsing="false" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2f0f0" />
+      <Button layoutX="26.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
+      <Button layoutX="218.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2eded" />
+      <Button layoutX="416.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2f0f0" />
       <Label layoutX="77.0" layoutY="413.0" text="It Chapter Two" textFill="#eee8e8" />
       <Label layoutX="77.0" layoutY="430.0" text="โผล่จากนรก 2 " textFill="#d5ff04" />
       <Label layoutX="77.0" layoutY="447.0" prefHeight="27.0" prefWidth="74.0" text="5/9/19" textFill="#1df22f">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Label layoutX="250.0" layoutY="413.0" text="Weathering with you" textFill="#f8f3f3" />
       <Label layoutX="250.0" layoutY="430.0" text="ฤดูฝัน ฉันมีเธอ" textFill="#dcff05" />
       <Label layoutX="250.0" layoutY="447.0" text="5/9/19" textFill="#17eb37">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="480.0" layoutY="413.0" text="Angel has Fallen" textFill="#ebe4e4" />
-      <Label layoutX="480.0" layoutY="430.0" text="ผ่ายุทธการ ดับแผนอหังการ" textFill="#e2f204" />
-      <Label layoutX="482.0" layoutY="447.0" text="22/8/19" textFill="#39f812">
+      <Label layoutX="449.0" layoutY="413.0" text="Angel has Fallen" textFill="#ebe4e4" />
+      <Label layoutX="444.0" layoutY="430.0" text="ผ่ายุทธการ ดับแผนอหังการ" textFill="#e2f204" />
+      <Label layoutX="444.0" layoutY="447.0" text="22/8/19" textFill="#39f812">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="254.0" fitWidth="185.0" layoutX="609.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/thumb_2765.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="302.0" fitWidth="178.0" layoutX="801.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/thumb_2595.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="265.0" fitWidth="228.0" layoutX="989.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/thumb_2681.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="609.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
+      <Button layoutX="801.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
+      <Button layoutX="989.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
+      <Label layoutX="679.0" layoutY="413.0" text="Cats" textFill="#eee8e8" />
+      <Label layoutX="801.0" layoutY="413.0" prefHeight="17.0" prefWidth="142.0" text="Fast And Furious Hobbs and Shaw" textFill="#eee8e8" />
+      <Label layoutX="1019.0" layoutY="413.0" text="47 Meters Down Uncaged" textFill="#eee8e8" />
+      <Label layoutX="662.0" layoutY="430.0" text="ก๊วนเหมียวหง่าว" textFill="#d5ff04" />
+      <Label layoutX="801.0" layoutY="430.0" text="เร็ว แรงทะลุนรกฮ็อบส์ แอนด์ ชอว์" textFill="#d5ff04" />
+      <Label layoutX="1038.0" layoutY="430.0" text="47 ดิ่งลึกสุดนรก" textFill="#d5ff04" />
+      <Label layoutX="661.0" layoutY="447.0" prefHeight="27.0" prefWidth="74.0" text="5/9/19" textFill="#1df22f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="835.0" layoutY="447.0" prefHeight="27.0" prefWidth="74.0" text="31/7/19" textFill="#1df22f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1038.0" layoutY="447.0" prefHeight="27.0" prefWidth="74.0" text="22/8/19" textFill="#1df22f">
+         <font>
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 </Pane>

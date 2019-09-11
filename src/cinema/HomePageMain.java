@@ -1,9 +1,12 @@
 package cinema;
 
 import javafx.application.Application;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 public class HomePageMain extends Application {
@@ -11,8 +14,8 @@ public class HomePageMain extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
-        primaryStage.setTitle("Nutflix");
-        primaryStage.setScene(new Scene(root, 900, 500));
+        primaryStage.setTitle("Nutflix - Watch Drama Shows, Watch Movies.");
+        primaryStage.setScene(new Scene(root, 1200, 500));   //900   500
         primaryStage.show();
         primaryStage.setResizable(false);
     }
@@ -21,4 +24,9 @@ public class HomePageMain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+
+
+
+
 }
