@@ -186,5 +186,7 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Button layoutX="404.0" layoutY="595.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Home" textFill="#fffbfb" />
+      <Button layoutX="329.0" layoutY="595.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back" textFill="#fffbfb" />
     </children>
 </Pane>

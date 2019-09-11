@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Reflection?>
@@ -286,5 +287,7 @@
       <Label layoutX="227.0" layoutY="263.0" text="3" textFill="#e5f506" />
       <Label layoutX="172.0" layoutY="263.0" text="2" textFill="#e5f506" />
       <Label layoutX="117.0" layoutY="263.0" text="1" textFill="#e5f506" />
+      <Button layoutX="14.0" layoutY="302.0" mnemonicParsing="false" text="Back" textFill="#f50808" />
+      <Button layoutX="534.0" layoutY="302.0" mnemonicParsing="false" text="Home" textFill="#e10707" />
    </children>
 </Pane>
