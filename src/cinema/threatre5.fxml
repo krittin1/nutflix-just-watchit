@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre1Controller">
     <children>
         <Pane layoutY="332.0" prefHeight="68.0" prefWidth="600.0" style="-fx-background-color: grey;">
             <children>
@@ -263,7 +263,7 @@
       <Label layoutX="365.0" layoutY="119.0" text="5" textFill="#ecf806" />
       <Label layoutX="436.0" layoutY="119.0" text="6" textFill="#ecf806" />
       <Label layoutX="498.0" layoutY="119.0" text="7" textFill="#ecf806" />
-      <Button layoutX="14.0" layoutY="302.0" mnemonicParsing="false" text="Back" textFill="#f80707" />
-      <Button layoutX="535.0" layoutY="302.0" mnemonicParsing="false" text="Home" textFill="#f20707" />
+      <Button fx:id="gobackthretre5" layoutX="14.0" layoutY="302.0" mnemonicParsing="false" onAction="#goBackFromThreatre1" onMouseClicked="#goBackFromThreatre1" text="Back" textFill="#f80707" />
+      <Button fx:id="gohomethreatre5" layoutX="535.0" layoutY="302.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" text="Home" textFill="#f20707" />
     </children>
 </Pane>

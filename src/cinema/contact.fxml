@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="604.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="604.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.ContactController">
    <children>
       <ImageView fitHeight="124.0" fitWidth="90.0" layoutX="362.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -27,9 +27,9 @@
       <Label layoutX="93.0" layoutY="237.0" prefHeight="17.0" prefWidth="213.0" text="NUTFLIX" textFill="#da0f0f" />
       <Label layoutX="158.0" layoutY="237.0" text="JUST WATCH IT" textFill="#da0f0f" />
       <Label layoutX="92.0" layoutY="264.0" text="Application for booking seat in cinemain home page you can choose movie" textFill="#da0f0f" wrapText="true" />
-      <Label layoutX="90.0" layoutY="290.0" text="then others page choose showtime, theatres type,screen display type." textFill="#da0f0f" />
-      <Label layoutX="89.0" layoutY="314.0" text="How to run projectrun jar file in command line interface with this instruction " textFill="#da0f0f" />
+      <Label layoutX="90.0" layoutY="290.0" text="How to get Ticket? choose movie click BUY NOW choose Thretre and click showtime " textFill="#da0f0f" />
+      <Label layoutX="89.0" layoutY="314.0" text="then choose seat number,type book . How to run Project follow instruction below" textFill="#da0f0f" />
       <Label layoutX="89.0" layoutY="339.0" text="java -jar and drag .jar file in then click enter." textFill="#da0f0f" />
-      <Button layoutX="221.0" layoutY="375.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="Home" textFill="#e10808" />
+      <Button fx:id="gohomecontactBtn" layoutX="221.0" layoutY="375.0" mnemonicParsing="false" onAction="#goHomeFromContact" onMouseClicked="#goHomeFromContact" style="-fx-background-color: black; -fx-border-color: red;" text="Home" textFill="#e10808" />
    </children>
 </Pane>

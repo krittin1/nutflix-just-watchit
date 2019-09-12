@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1029.0" prefWidth="1242.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1029.0" prefWidth="1242.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.HomePageController">
    <children>
       <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="100.0" prefWidth="1249.0" style="-fx-background-color: black;">
          <children>
@@ -65,7 +65,7 @@
                   <Font name="Tahoma" size="13.0" />
                </font>
             </Label>
-            <Button layoutX="1053.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Contact" textFill="#f5e7e7">
+            <Button fx:id="contactBtn" layoutX="1053.0" layoutY="38.0" mnemonicParsing="false" onAction="#goContact" onMouseClicked="#goContact" style="-fx-background-color: red;" text="Contact" textFill="#f5e7e7">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -90,9 +90,9 @@
             <Image url="@../images/thumb_2655.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="26.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
-      <Button layoutX="218.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2eded" />
-      <Button layoutX="416.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2f0f0" />
+      <Button fx:id="buynow1Btn" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" onAction="#goMovie1" onMouseClicked="#goMovie1" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f5f3f3" />
+      <Button fx:id="buynow2Btn" layoutX="218.0" layoutY="381.0" mnemonicParsing="false" onAction="#goMovie2" onMouseClicked="#goMovie2" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2eded" />
+      <Button fx:id="buynow3Btn" layoutX="416.0" layoutY="381.0" mnemonicParsing="false" onAction="#goMovie3" onMouseClicked="#goMovie3" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: red;" text="BUY NOW" textFill="#f2f0f0" />
       <Label layoutX="77.0" layoutY="413.0" text="It Chapter Two" textFill="#eee8e8" />
       <Label layoutX="77.0" layoutY="430.0" text="โผล่จากนรก 2 " textFill="#d5ff04" />
       <Label layoutX="77.0" layoutY="447.0" prefHeight="27.0" prefWidth="74.0" text="5/9/19" textFill="#1df22f">

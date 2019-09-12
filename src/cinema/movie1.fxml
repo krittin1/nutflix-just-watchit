@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Movie1Controller">
    <children>
       <Line endX="591.0" layoutX="101.0" layoutY="44.0" startX="-101.0" stroke="#f50303" />
       <Line endX="92.5" endY="-23.414215087890625" layoutX="120.0" layoutY="43.0" startX="64.5" startY="-43.0" stroke="#f20808" />
@@ -91,9 +91,9 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="312.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: gold; -fx-border-color: red;" text="13:30" textFill="#ff0505" />
-      <Button layoutX="368.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="17:00" textFill="#f80a0a" />
-      <Button layoutX="429.0" layoutY="179.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="20:30" textFill="#f50707" />
+      <Button fx:id="movie1time1Threatre5" layoutX="312.0" layoutY="179.0" mnemonicParsing="false" onAction="#goThreatre5FromMovie1Time1" onMouseClicked="#goThreatre5FromMovie1Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="13:30" textFill="#ff0505" />
+      <Button fx:id="movie1time2Threatre5" layoutX="368.0" layoutY="179.0" mnemonicParsing="false" onAction="#goThreatre5FromMovie1Time2" onMouseClicked="#goThreatre5FromMovie1Time2" style="-fx-background-color: black; -fx-border-color: red;" text="17:00" textFill="#f80a0a" />
+      <Button fx:id="movie1time3Threatre5" layoutX="429.0" layoutY="179.0" mnemonicParsing="false" onAction="#goThreatre5FromMovie1Time3" onMouseClicked="#goThreatre5FromMovie1Time3" style="-fx-background-color: black; -fx-border-color: red;" text="20:30" textFill="#f50707" />
       <ImageView fitHeight="21.0" fitWidth="37.0" layoutX="301.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/rating_3.png" />
@@ -169,14 +169,13 @@
             <Image url="@../images/3(27).jpg" />
          </image>
       </ImageView>
-      <Button layoutX="306.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: gold; -fx-border-color: red;" text="11:30" textFill="#ff0505" />
-      <Button layoutX="306.0" layoutY="538.0" mnemonicParsing="false" style="-fx-background-color: gold; -fx-border-color: red;" text="12:00" textFill="#ff0505" />
-      <Button layoutX="368.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="15:00" textFill="#f80a0a" />
-      <Button layoutX="429.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="18:30" textFill="#f80a0a" />
-      <Button layoutX="368.0" layoutY="538.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="15:30" textFill="#f80a0a" />
-      <Button layoutX="429.0" layoutY="538.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="19:00" textFill="#f80a0a" />
-      <Button layoutX="616.0" layoutY="60.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Detail" textFill="#fffbfb" />
-      <Button layoutX="329.0" layoutY="590.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back" textFill="#fffbfb" />
-      <Button layoutX="399.0" layoutY="590.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Home" textFill="#fffbfb" />
+      <Button fx:id="movie1time1Threatre3" layoutX="306.0" layoutY="361.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time1" onMouseClicked="#goThreatre3FromMovie1Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="11:30" textFill="#ff0505" />
+      <Button fx:id="movie1time1Threatre1" layoutX="306.0" layoutY="538.0" mnemonicParsing="false" onAction="#goThreatre1FromMovie1Time1" onMouseClicked="#goThreatre1FromMovie1Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="12:00" textFill="#ff0505" />
+      <Button fx:id="movie1time2Threatre3" layoutX="368.0" layoutY="361.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time2" onMouseClicked="#goThreatre3FromMovie1Time2" style="-fx-background-color: black; -fx-border-color: red;" text="15:00" textFill="#f80a0a" />
+      <Button fx:id="movie1time3Threatre3" layoutX="429.0" layoutY="361.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time3" onMouseClicked="#goThreatre3FromMovie1Time3" style="-fx-background-color: black; -fx-border-color: red;" text="18:30" textFill="#f80a0a" />
+      <Button fx:id="movie1time2Threatre1" layoutX="368.0" layoutY="538.0" mnemonicParsing="false" onAction="#goThreatre1FromMovie1Time2" onMouseClicked="#goThreatre1FromMovie1Time2" style="-fx-background-color: black; -fx-border-color: red;" text="15:30" textFill="#f80a0a" />
+      <Button fx:id="movie1time3Threatre1" layoutX="429.0" layoutY="538.0" mnemonicParsing="false" onAction="#goThreatre1FromMovie1Time3" onMouseClicked="#goThreatre1FromMovie1Time3" style="-fx-background-color: black; -fx-border-color: red;" text="19:00" textFill="#f80a0a" />
+      <Button fx:id="detailBtn" layoutX="616.0" layoutY="60.0" mnemonicParsing="false" onAction="#goMovieDetail1FromMovie1" onMouseClicked="#goHomeFromMovie1" style="-fx-background-color: red;" text="Detail" textFill="#fffbfb" />
+      <Button fx:id="gohomemovie1" layoutX="399.0" layoutY="590.0" mnemonicParsing="false" onAction="#goHomeFromMovie1" onMouseClicked="#goHomeFromMovie1" style="-fx-background-color: red;" text="Home" textFill="#fffbfb" />
    </children>
 </Pane>
