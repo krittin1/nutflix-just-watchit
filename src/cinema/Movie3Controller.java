@@ -47,7 +47,7 @@ public class Movie3Controller extends Movie2Controller {
         Stage stage = (Stage) b.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("moviedetail3.fxml"));
         try {
-            stage.setScene(new Scene(loader.load(), 600, 665));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 

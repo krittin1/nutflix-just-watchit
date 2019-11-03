@@ -20,7 +20,7 @@ public class Movie2Controller extends Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -36,7 +36,7 @@ public class Movie2Controller extends Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -52,7 +52,7 @@ public class Movie2Controller extends Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -71,7 +71,7 @@ public class Movie2Controller extends Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre4.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -87,7 +87,7 @@ public class Movie2Controller extends Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre4.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -105,7 +105,7 @@ public class Movie2Controller extends Movie1Controller {
         Stage stage = (Stage) b.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("moviedetail2.fxml"));
         try {
-            stage.setScene(new Scene(loader.load(), 600, 665));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 

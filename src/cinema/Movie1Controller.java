@@ -17,7 +17,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("homepage.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 1200, 500));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -34,7 +34,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -50,7 +50,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -66,7 +66,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -83,7 +83,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre3.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -99,7 +99,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre3.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -115,7 +115,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre3.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -131,7 +131,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -147,7 +147,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -163,7 +163,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -180,7 +180,7 @@ public class Movie1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("moviedetail1.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 600, 665));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 

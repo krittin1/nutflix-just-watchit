@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="blackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.LoginController">
+   <children>
+      <Button fx:id="button" layoutX="43.0" layoutY="28.0" mnemonicParsing="false" onAction="#ButtonOnClick" style="-fx-background-color: black; -fx-border-color: red; -fx-border-radius: 100;" text="Change Theme" textFill="#f50606" />
+      <ImageView fitHeight="439.0" fitWidth="759.0" layoutX="154.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/threatre.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="blackground2" layoutX="340.0" layoutY="124.0" opacity="0.41" prefHeight="325.0" prefWidth="388.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="usernameLogin" layoutX="105.0" layoutY="105.0" prefHeight="33.0" prefWidth="225.0" promptText="enter username" style="-fx-background-radius: 100;" />
+            <Label fx:id="username" layoutX="25.0" layoutY="112.0" text="username" textFill="#f50707">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="password" layoutX="26.0" layoutY="162.0" text="password" textFill="#f50505">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="signIn" layoutX="105.0" layoutY="203.0" mnemonicParsing="false" onAction="#goHomeFromLogin" prefHeight="33.0" prefWidth="225.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Sign In" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="text" layoutX="171.0" layoutY="250.0" text="new  for Nutflix ?try sign up" textFill="#2708d7">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordLogin" layoutX="105.0" layoutY="155.0" prefHeight="33.0" prefWidth="225.0" promptText="enter password" style="-fx-background-radius: 100;" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="637.0" fitWidth="871.0" layoutX="101.0" layoutY="-398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nutflixlogo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signUp" layoutX="887.0" layoutY="28.0" mnemonicParsing="false" onAction="#goRegister" onMouseClicked="#goRegister" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: blue; -fx-background-radius: 100;" text="Sign up" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -17,7 +17,7 @@ public class Threatre1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("homepage.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 1200, 500));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -34,7 +34,7 @@ public class Threatre1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("movie1.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 700, 634));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 
@@ -50,7 +50,7 @@ public class Threatre1Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("movie2.fxml"));
 
         try {
-            stage.setScene(new Scene(loader.load(), 700, 634));
+            stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
             stage.show();
 

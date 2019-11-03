@@ -13,9 +13,9 @@ public class HomePageMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("Nutflix - Watch Drama Shows, Watch Movies.");
-        primaryStage.setScene(new Scene(root, 1200, 500));   //900   500
+        primaryStage.setScene(new Scene(root, 1020, 573));   //900   500
         primaryStage.show();
         primaryStage.setResizable(false);
     }
