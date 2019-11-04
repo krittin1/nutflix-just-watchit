@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre2Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre2_15_30Controller">
     <children>
         <Pane layoutY="505.0" prefHeight="68.0" prefWidth="1020.0" style="-fx-background-color: grey;">
             <children>
@@ -289,10 +289,10 @@
         <Label layoutX="114.0" layoutY="406.0" text="1" textFill="#e5f506" />
         <Button fx:id="goBackthreatre1" layoutX="28.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackToMvie2" onMouseClicked="#goBackToMvie2" style="-fx-background-radius: 100;" text="Back" textFill="#f50808" />
         <Button fx:id="gohomethreatre1" layoutX="948.0" layoutY="475.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" style="-fx-background-radius: 100;" text="Home" textFill="#e10707" />
-      <Button fx:id="confirm" layoutX="572.0" layoutY="470.0" mnemonicParsing="false" onAction="#confirmBtn" onMouseClicked="#confirmBtn" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#fcfcfc">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
+        <Button fx:id="confirm" layoutX="572.0" layoutY="470.0" mnemonicParsing="false" onAction="#confirmBtn" onMouseClicked="#confirmBtn" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#fcfcfc">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
     </children>
 </Pane>

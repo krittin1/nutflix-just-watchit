@@ -21,38 +21,39 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
-public class Threatre1_11_00Controller {
+public class Threatre2_14_00Controller extends Threatre1Controller {
     @FXML
-    ImageView A1, A2, A3, A4, A5, A6, A7, A8;
+    ImageView A1,A2,A3,A4,A5,A6,A7,A8;
 
     @FXML
-    ImageView B1, B2, B3, B4, B5, B6, B7, B8;
+    ImageView B1,B2,B3,B4,B5,B6,B7,B8;
 
     @FXML
-    ImageView C1, C2, C3, C4, C5, C6, C7, C8;
+    ImageView C1,C2,C3,C4,C5,C6,C7,C8;
 
     @FXML
-    ImageView D1, D2, D3, D4, D5, D6, D7, D8;
+    ImageView D1,D2,D3,D4,D5,D6,D7,D8;
 
     @FXML
     Button confirm;
 
 
     private List<Seat> seats = new ArrayList<>();
-    private String filename = "BookingData1_11_00.csv";
-    private int count = 0;
+    private String filename  = "BookingData2_14_00.csv";
+    private int count=0;
 
 
-    public void initialize() throws IOException {
 
-        File file = new File("BookingData1_11_00.csv");
+    public void initialize() throws IOException{
+
+        File file = new File("BookingData2_14_00.csv");
         try {
             file.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        File file2 = new File("check1_11_00.txt");
+        File file2 = new File("check2_14_00.txt");
         try {
             file2.createNewFile();
         } catch (IOException e) {
@@ -62,55 +63,55 @@ public class Threatre1_11_00Controller {
         loadCheck();
 
 
-        seats.add(new Seat("A1", 270, A1, 0));
-        seats.add(new Seat("A2", 270, A2, 0));
-        seats.add(new Seat("A3", 270, A3, 0));
-        seats.add(new Seat("A4", 270, A4, 0));
-        seats.add(new Seat("A5", 270, A5, 0));
-        seats.add(new Seat("A6", 270, A6, 0));
-        seats.add(new Seat("A7", 270, A7, 0));
-        seats.add(new Seat("A8", 270, A8, 0));
+        seats.add(new Seat("A1",450,A1,0));
+        seats.add(new Seat("A2",450,A2,0));
+        seats.add(new Seat("A3",450,A3,0));
+        seats.add(new Seat("A4",450,A4,0));
+        seats.add(new Seat("A5",450,A5,0));
+        seats.add(new Seat("A6",450,A6,0));
+        seats.add(new Seat("A7",450,A7,0));
+        seats.add(new Seat("A8",450,A8,0));
 
-        seats.add(new Seat("B1", 270, B1, 0));
-        seats.add(new Seat("B2", 270, B2, 0));
-        seats.add(new Seat("B3", 270, B3, 0));
-        seats.add(new Seat("B4", 270, B4, 0));
-        seats.add(new Seat("B5", 270, B5, 0));
-        seats.add(new Seat("B6", 270, B6, 0));
-        seats.add(new Seat("B7", 270, B7, 0));
-        seats.add(new Seat("B8", 270, B8, 0));
+        seats.add(new Seat("B1",450,B1,0));
+        seats.add(new Seat("B2",450,B2,0));
+        seats.add(new Seat("B3",450,B3,0));
+        seats.add(new Seat("B4",450,B4,0));
+        seats.add(new Seat("B5",450,B5,0));
+        seats.add(new Seat("B6",450,B6,0));
+        seats.add(new Seat("B7",450,B7,0));
+        seats.add(new Seat("B8",450,B8,0));
 
-        seats.add(new Seat("C1", 270, C1, 0));
-        seats.add(new Seat("C2", 270, C2, 0));
-        seats.add(new Seat("C3", 270, C3, 0));
-        seats.add(new Seat("C4", 270, C4, 0));
-        seats.add(new Seat("C5", 270, C5, 0));
-        seats.add(new Seat("C6", 270, C6, 0));
-        seats.add(new Seat("C7", 270, C7, 0));
-        seats.add(new Seat("C8", 270, C8, 0));
+        seats.add(new Seat("C1",450,C1,0));
+        seats.add(new Seat("C2",450,C2,0));
+        seats.add(new Seat("C3",450,C3,0));
+        seats.add(new Seat("C4",450,C4,0));
+        seats.add(new Seat("C5",450,C5,0));
+        seats.add(new Seat("C6",450,C6,0));
+        seats.add(new Seat("C7",450,C7,0));
+        seats.add(new Seat("C8",450,C8,0));
 
-        seats.add(new Seat("D1", 270, D1, 0));
-        seats.add(new Seat("D2", 270, D2, 0));
-        seats.add(new Seat("D3", 270, D3, 0));
-        seats.add(new Seat("D4", 270, D4, 0));
-        seats.add(new Seat("D5", 270, D5, 0));
-        seats.add(new Seat("D6", 270, D6, 0));
-        seats.add(new Seat("D7", 270, D7, 0));
-        seats.add(new Seat("D8", 270, D8, 0));
+        seats.add(new Seat("D1",450,D1,0));
+        seats.add(new Seat("D2",450,D2,0));
+        seats.add(new Seat("D3",450,D3,0));
+        seats.add(new Seat("D4",450,D4,0));
+        seats.add(new Seat("D5",450,D5,0));
+        seats.add(new Seat("D6",450,D6,0));
+        seats.add(new Seat("D7",450,D7,0));
+        seats.add(new Seat("D8",450,D8,0));
 
-        if (count == 0) {
+        if (count == 0 ) {
             addData(seats);
         }
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
             String line;
             int i = 0;
-            while ((line = bufferedReader.readLine()) != null) {
-                String[] dataFile = line.split(",");
+            while ((line = bufferedReader.readLine())!=null){
+                String [] dataFile = line.split(",");
                 String numberFile = dataFile[0];
                 double priceFile = Double.parseDouble(dataFile[1]);
                 int statusFile = Integer.parseInt(dataFile[2]);
-                seats.get(i).setSeat(numberFile, priceFile, statusFile);
+                seats.get(i).setSeat(numberFile,priceFile,statusFile);
                 int temp = i;
                 seats.get(i).getImage().setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
@@ -126,27 +127,31 @@ public class Threatre1_11_00Controller {
     }
 
     public void writeCheck() throws IOException {
-        Path path = Paths.get("check1_11_00.txt");
+        Path path = Paths.get("check2_14_00.txt");
         FileWriter fileWriter = null;
-        fileWriter = new FileWriter("check1_11_00.txt", true);
+        fileWriter = new FileWriter("check2_14_00.txt", true);
         BufferedWriter bw = new BufferedWriter(fileWriter);
         try {
+
 
 
             bw.write("1");
             bw.newLine();
 
-        } finally {
-            if (bw != null) {
+        }
+
+        finally {
+            if(bw != null) {
                 bw.close();
             }
         }
     }
 
 
+
     public void loadCheck() throws IOException {
 
-        Path path = Paths.get("check1_11_00.txt");
+        Path path = Paths.get("check2_14_00.txt");
         BufferedReader br = Files.newBufferedReader(path);
         String input;
 
@@ -155,8 +160,10 @@ public class Threatre1_11_00Controller {
                 this.count = Integer.parseInt(input);
 
             }
-        } finally {
-            if (br != null) {
+        }
+
+        finally {
+            if(br != null) {
                 br.close();
             }
         }
@@ -164,15 +171,18 @@ public class Threatre1_11_00Controller {
 
     public void addData(List<Seat> seats) throws IOException {
 
+
+
+
         Path path = Paths.get(filename);
         FileWriter fileWriter;
         fileWriter = new FileWriter(filename);
         BufferedWriter bw = new BufferedWriter(fileWriter);
         try {
 
-            for (Seat i : seats) {
 
-                bw.write(i.getNumber() + "," + i.getPrice() + "," + i.getStatus());
+            for (Seat i : seats){
+                bw.write(i.getNumber()+","+i.getPrice()+","+i.getStatus());
                 bw.newLine();
             }
 
@@ -183,28 +193,29 @@ public class Threatre1_11_00Controller {
             }
         }
     }
-
     public void storeBook() throws IOException {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
             String line;
-            for (Seat i : seats) {
-                if (i.getStatus() == 1) {
-                    line = i.getNumber() + "," + i.getPrice() + "," + 2 + "\n";
-                    i.setSeat(i.getNumber(), i.getPrice(), 2);
+            for (Seat i: seats) {
+                if(i.getStatus() == 1){
+                    line = i.getNumber()+","+i.getPrice()+","+2+"\n";
+                    i.setSeat(i.getNumber(),i.getPrice(),2);
 
                     writeCheck();
-                } else {
-                    line = i.getNumber() + "," + i.getPrice() + "," + i.getStatus() + "\n";
+                }
+                else{
+                    line = i.getNumber()+","+i.getPrice()+","+i.getStatus()+"\n";
 
                 }
                 bw.write(line);
             }
             bw.close();
-        } catch (FileNotFoundException e) {
+        }catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
+
 
 
     public void confirmBtn() throws IOException {

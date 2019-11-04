@@ -235,11 +235,11 @@ public class Threatre1_16_20Controller {
     }
 
 
-    public void goBackFromThreatre1(ActionEvent a) {
+    public void goBack(ActionEvent a) {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie3.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
@@ -251,19 +251,5 @@ public class Threatre1_16_20Controller {
         }
     }
 
-    public void goBackToMvie2(ActionEvent a) {
-        Button b = (Button) a.getSource();
 
-        Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie2.fxml"));
-
-        try {
-            stage.setScene(new Scene(loader.load(), 1020, 573));
-            stage.centerOnScreen();
-            stage.show();
-
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-    }
 }

@@ -295,7 +295,7 @@
         <Label layoutX="334.0" layoutY="391.0" text="3" textFill="#d9e809" />
         <Label layoutX="219.0" layoutY="391.0" text="2" textFill="#d9e809" />
         <Label layoutX="120.0" layoutY="391.0" text="1" textFill="#d9e809" />
-        <Button fx:id="gobackthreatre3" layoutX="27.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackFromThreatre1" onMouseClicked="#goBackFromThreatre1" style="-fx-background-color: white; -fx-background-radius: 100;" text="Back" textFill="#eb0b0b" />
+        <Button fx:id="gobackthreatre3" layoutX="27.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackToMvie2" onMouseClicked="#goBackToMvie2" style="-fx-background-color: white; -fx-background-radius: 100;" text="Back" textFill="#eb0b0b" />
         <Button fx:id="gohomethreatre3" layoutX="948.0" layoutY="475.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" style="-fx-background-radius: 100;" text="Home" textFill="#f50a0a" />
       <Button fx:id="confirm" layoutX="551.0" layoutY="470.0" mnemonicParsing="false" onAction="#confirmBtn" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#f5f0f0">
          <font>

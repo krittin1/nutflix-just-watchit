@@ -33,7 +33,7 @@ public class Movie2Controller extends Movie1Controller {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2_15-30.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
@@ -49,7 +49,7 @@ public class Movie2Controller extends Movie1Controller {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre2_18-00.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
