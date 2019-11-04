@@ -47,7 +47,7 @@ public class Movie1Controller {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5_17-00.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
@@ -59,21 +59,7 @@ public class Movie1Controller {
         }
     }
 
-    public void goThreatre5FromMovie1Time3(ActionEvent a) {
-        Button b = (Button) a.getSource();
 
-        Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre5.fxml"));
-
-        try {
-            stage.setScene(new Scene(loader.load(), 1020, 573));
-            stage.centerOnScreen();
-            stage.show();
-
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-    }
 
 
     public void goThreatre3FromMovie1Time1(ActionEvent a) {
@@ -160,7 +146,7 @@ public class Movie1Controller {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1_19-00.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));

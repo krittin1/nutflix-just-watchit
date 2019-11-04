@@ -13,6 +13,8 @@ public class Seat {
     private String people = "images/single-user-yellow-hi.png";
     private String seat = "images/sofa__chair__interior__furniture__seat-512.png";
     private String choose = "images/check-mark-computer-icons-clip-art-green-tick.png";
+    private String kingSeat = "images/65-512.png";
+    private String vip = "images/Retro_Vintage_Wedding_Love_Married_Bed-256.png";
 
     public Seat(String number,double price,ImageView image, int status) {
         this.number = number;
@@ -25,7 +27,7 @@ public class Seat {
         this.number = number;
         this.price = price;
         this.status = status;
-        setImage(this.status);
+        setImage(this.status,this.price);
     }
 
     public void book(){
@@ -37,6 +39,11 @@ public class Seat {
         else if (status == 1){
             status = 0;
             image.setImage((new Image(seat)));
+            if (price == 670 || price == 899){
+                image.setImage((new Image(kingSeat)));
+            }else if (price == 1599){
+                image.setImage((new Image(vip)));
+            }
 
         }
     }
@@ -67,12 +74,26 @@ public class Seat {
         this.price = price;
     }
 
-    public void setImage(int status) {
-        if (status == 0){
-            image.setImage(new Image(seat));
-        }
-        else if(status == 2){
-            image.setImage(new Image(people));
+    public void setImage(int status, double price) {
+
+        if (price == 670 || price == 899) {
+            if (status == 0) {
+                image.setImage(new Image(kingSeat));
+            } else if (status == 2) {
+                image.setImage(new Image(people));
+            }
+        }else if (price ==  1599){
+            if (status == 0) {
+                image.setImage(new Image(vip));
+            } else if (status == 2) {
+                image.setImage(new Image(people));
+            }
+        }else{
+            if (status == 2) {
+                image.setImage(new Image(people));
+            } else if (status == 0) {
+                image.setImage(new Image(seat));
+            }
         }
     }
 

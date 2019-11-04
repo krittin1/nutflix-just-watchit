@@ -21,7 +21,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
-public class Threatre1_15_30Controller {
+public class Threatre1_11_00Controller {
     @FXML
     ImageView A1, A2, A3, A4, A5, A6, A7, A8;
 
@@ -39,20 +39,20 @@ public class Threatre1_15_30Controller {
 
 
     private List<Seat> seats = new ArrayList<>();
-    private String filename = "BookingData1_15_30.csv";
+    private String filename = "BookingData1_11_00.csv";
     private int count = 0;
 
 
     public void initialize() throws IOException {
 
-        File file = new File("BookingData1_15_30.csv");
+        File file = new File("BookingData1_11_00.csv");
         try {
             file.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        File file2 = new File("check1_15_30.txt");
+        File file2 = new File("check1_11_00.txt");
         try {
             file2.createNewFile();
         } catch (IOException e) {
@@ -126,9 +126,9 @@ public class Threatre1_15_30Controller {
     }
 
     public void writeCheck() throws IOException {
-        Path path = Paths.get("check1_15_30.txt");
+        Path path = Paths.get("check1_11_00.txt");
         FileWriter fileWriter = null;
-        fileWriter = new FileWriter("check1_15_30.txt", true);
+        fileWriter = new FileWriter("check1_11_00.txt", true);
         BufferedWriter bw = new BufferedWriter(fileWriter);
         try {
 
@@ -146,7 +146,7 @@ public class Threatre1_15_30Controller {
 
     public void loadCheck() throws IOException {
 
-        Path path = Paths.get("check1_15_30.txt");
+        Path path = Paths.get("check1_11_00.txt");
         BufferedReader br = Files.newBufferedReader(path);
         String input;
 

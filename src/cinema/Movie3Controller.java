@@ -11,12 +11,37 @@ import java.io.IOException;
 public class Movie3Controller extends Movie2Controller {
     @Override
     public void goThreatre1FromMovie1Time1(ActionEvent a) {
-        super.goThreatre1FromMovie1Time1(a);
+
+        Button b = (Button) a.getSource();
+
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1_11-00.fxml"));
+
+        try {
+            stage.setScene(new Scene(loader.load(), 1020, 573));
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
     }
 
     @Override
     public void goThreatre1FromMovie1Time2(ActionEvent a) {
-        super.goThreatre1FromMovie1Time2(a);
+        Button b = (Button) a.getSource();
+
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre1_16-20.fxml"));
+
+        try {
+            stage.setScene(new Scene(loader.load(), 1020, 573));
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
     }
 
     @Override

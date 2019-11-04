@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre2Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre1_11_00Controller">
     <children>
-        <Pane layoutY="505.0" prefHeight="68.0" prefWidth="1020.0" style="-fx-background-color: grey;">
+        <Pane layoutX="4.0" layoutY="505.0" prefHeight="68.0" prefWidth="1020.0" style="-fx-background-color: grey;">
             <children>
                 <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="364.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -23,7 +23,7 @@
                         <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
-                <Label layoutX="586.0" layoutY="23.0" text="450">
+                <Label layoutX="586.0" layoutY="23.0" text="270">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>
@@ -34,162 +34,162 @@
                     </font>
                 </Label>
             </children></Pane>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="806.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D8" fitHeight="61.0" fitWidth="55.0" layoutX="806.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="713.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D7" fitHeight="61.0" fitWidth="55.0" layoutX="713.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="401.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D4" fitHeight="61.0" fitWidth="55.0" layoutX="401.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="608.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D6" fitHeight="61.0" fitWidth="55.0" layoutX="608.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D5" fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="291.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D3" fitHeight="61.0" fitWidth="55.0" layoutX="291.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="191.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D2" fitHeight="61.0" fitWidth="55.0" layoutX="191.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="710.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C7" fitHeight="61.0" fitWidth="55.0" layoutX="710.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="809.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C8" fitHeight="61.0" fitWidth="55.0" layoutX="809.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="611.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C6" fitHeight="61.0" fitWidth="55.0" layoutX="611.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C5" fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="401.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C4" fitHeight="61.0" fitWidth="55.0" layoutX="401.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="294.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C3" fitHeight="61.0" fitWidth="55.0" layoutX="294.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="194.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C2" fitHeight="61.0" fitWidth="55.0" layoutX="194.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="96.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="C1" fitHeight="61.0" fitWidth="55.0" layoutX="96.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="517.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B5" fitHeight="61.0" fitWidth="55.0" layoutX="517.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="404.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B4" fitHeight="61.0" fitWidth="55.0" layoutX="404.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="294.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B3" fitHeight="61.0" fitWidth="55.0" layoutX="294.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="197.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B2" fitHeight="61.0" fitWidth="55.0" layoutX="197.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B1" fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="614.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B6" fitHeight="61.0" fitWidth="55.0" layoutX="614.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="710.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B7" fitHeight="61.0" fitWidth="55.0" layoutX="710.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="809.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="B8" fitHeight="61.0" fitWidth="55.0" layoutX="809.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A1" fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="200.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A2" fitHeight="61.0" fitWidth="55.0" layoutX="200.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="297.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A3" fitHeight="61.0" fitWidth="55.0" layoutX="297.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="407.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A4" fitHeight="61.0" fitWidth="55.0" layoutX="407.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A5" fitHeight="61.0" fitWidth="55.0" layoutX="514.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="611.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A6" fitHeight="61.0" fitWidth="55.0" layoutX="611.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="707.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A7" fitHeight="61.0" fitWidth="55.0" layoutX="707.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="806.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="A8" fitHeight="61.0" fitWidth="55.0" layoutX="806.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="D1" fitHeight="61.0" fitWidth="55.0" layoutX="90.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/sofa__chair__interior__furniture__seat-512.png" />
             </image>
@@ -289,5 +289,11 @@
         <Label layoutX="114.0" layoutY="406.0" text="1" textFill="#e5f506" />
         <Button fx:id="goBackthreatre1" layoutX="28.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackFromThreatre1" onMouseClicked="#goBackFromThreatre1" style="-fx-background-radius: 100;" text="Back" textFill="#f50808" />
         <Button fx:id="gohomethreatre1" layoutX="948.0" layoutY="475.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" style="-fx-background-radius: 100;" text="Home" textFill="#e10707" />
+        <Button fx:id="confirm" layoutX="596.0" layoutY="469.0" mnemonicParsing="false" onAction="#confirmBtn" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#f8f4f4">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
     </children>
 </Pane>
+

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre1Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre5Controller">
     <children>
         <Pane layoutY="505.0" prefHeight="68.0" prefWidth="1027.0" style="-fx-background-color: grey;">
             <children>
@@ -95,142 +95,142 @@
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="801.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D7" fitHeight="68.0" fitWidth="89.0" layoutX="801.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D4" fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D3" fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="666.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D6" fitHeight="68.0" fitWidth="89.0" layoutX="666.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D2" fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="556.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D5" fitHeight="68.0" fitWidth="89.0" layoutX="556.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="72.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="D1" fitHeight="68.0" fitWidth="89.0" layoutX="72.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="74.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C1" fitHeight="68.0" fitWidth="89.0" layoutX="74.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C2" fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C4" fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C5" fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C6" fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C7" fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="C3" fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="75.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B1" fitHeight="68.0" fitWidth="89.0" layoutX="75.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B2" fitHeight="68.0" fitWidth="89.0" layoutX="207.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B3" fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B4" fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B5" fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B6" fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="B7" fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="75.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A1" fitHeight="68.0" fitWidth="89.0" layoutX="75.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="204.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A2" fitHeight="68.0" fitWidth="89.0" layoutX="204.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A3" fitHeight="68.0" fitWidth="89.0" layoutX="317.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A4" fitHeight="68.0" fitWidth="89.0" layoutX="442.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A6" fitHeight="68.0" fitWidth="89.0" layoutX="663.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A7" fitHeight="68.0" fitWidth="89.0" layoutX="798.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="A5" fitHeight="68.0" fitWidth="89.0" layoutX="559.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Retro_Vintage_Wedding_Love_Married_Bed-256.png" />
          </image>
@@ -265,5 +265,10 @@
       <Label layoutX="832.0" layoutY="145.0" text="7" textFill="#ecf806" />
       <Button fx:id="gobackthretre5" layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackFromThreatre1" onMouseClicked="#goBackFromThreatre1" style="-fx-background-radius: 100;" text="Back" textFill="#f80707" />
       <Button fx:id="gohomethreatre5" layoutX="957.0" layoutY="475.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" style="-fx-background-radius: 100;" text="Home" textFill="#f20707" />
+      <Button fx:id="confirm" layoutX="559.0" layoutY="469.0" mnemonicParsing="false" onAction="#confirmBtn" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
     </children>
 </Pane>

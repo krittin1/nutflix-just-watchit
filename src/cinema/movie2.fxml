@@ -96,7 +96,6 @@
         </Label>
         <Button fx:id="movie2threatre3Time1" layoutX="312.0" layoutY="166.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time1" onMouseClicked="#goThreatre3FromMovie1Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="11:30" textFill="#ff0505" />
         <Button fx:id="movie2threatre3Time2" layoutX="366.0" layoutY="166.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time2" onMouseClicked="#goThreatre3FromMovie1Time2" style="-fx-background-color: black; -fx-border-color: red;" text="14:00" textFill="#f80a0a" />
-        <Button fx:id="movie2threatre3Time3" layoutX="429.0" layoutY="166.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time3" onMouseClicked="#goThreatre3FromMovie1Time3" style="-fx-background-color: black; -fx-border-color: red;" text="16:30" textFill="#f50707" />
         <ImageView fitHeight="21.0" fitWidth="37.0" layoutX="311.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/rating_2.png" />
@@ -177,7 +176,6 @@
         <Button fx:id="movie2threatre2Time2" layoutX="372.0" layoutY="326.0" mnemonicParsing="false" onAction="#goThreatre2FromMovie2Time2" onMouseClicked="#goThreatre2FromMovie2Time2" style="-fx-background-color: black; -fx-border-color: red;" text="15:30" textFill="#f80a0a" />
         <Button fx:id="movie2threatre2Time3" layoutX="429.0" layoutY="326.0" mnemonicParsing="false" onAction="#goThreatre2FromMovie2Time3" onMouseClicked="#goThreatre2FromMovie2Time3" style="-fx-background-color: black; -fx-border-color: red;" text="18:00" textFill="#f80a0a" />
         <Button fx:id="movie2threatre4Time2" layoutX="372.0" layoutY="499.0" mnemonicParsing="false" onAction="#goThreatre4FromMovie2Time2" onMouseClicked="#goThreatre4FromMovie2Time2" style="-fx-background-color: black; -fx-border-color: red;" text="20:30" textFill="#f80a0a" />
-        <Button fx:id="movie2threatre3Time4" layoutX="487.0" layoutY="166.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time3" onMouseClicked="#goThreatre3FromMovie1Time3" style="-fx-background-color: black; -fx-border-color: red;" text="19:00" textFill="#f80a0a" />
         <Button fx:id="detailmovie2Btn" layoutX="946.0" layoutY="60.0" mnemonicParsing="false" onAction="#goMovieDetail1FromMovie2" onMouseClicked="#goMovieDetail1FromMovie2" style="-fx-background-color: red; -fx-background-radius: 100;" text="Detail" textFill="#fffbfb" />
       <Label layoutX="306.0" layoutY="434.0" text="ฤดูฝัน ฉันมีเธอ แอนิเมชัน , แฟนตาซี , โรแมนติก  111 นาที" textFill="#fcfafa">
          <font>
