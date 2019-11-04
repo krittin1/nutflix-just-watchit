@@ -1,14 +1,301 @@
 package cinema;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Optional;
 
 public class Threatre1Controller {
+    @FXML
+    ImageView A1,A2,A3,A4,A5,A6,A7,A8;
+
+    @FXML
+    ImageView B1,B2,B3,B4,B5,B6,B7,B8;
+
+    @FXML
+    ImageView C1,C2,C3,C4,C5,C6,C7,C8;
+
+    @FXML
+    ImageView D1,D2,D3,D4,D5,D6,D7,D8;
+
+    @FXML
+    Button confirm;
+
+
+    private List<Seat> seats = new ArrayList<>();
+    private String filename  = "BookingData.csv";
+    private int count=0;
+
+
+
+    public void initialize() throws IOException{
+
+        File file = new File("BookingData.csv");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        File file2 = new File("check.txt");
+        try {
+            file2.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        loadCheck();
+
+
+        seats.add(new Seat("A1",270,A1,0));
+        seats.add(new Seat("A2",270,A2,0));
+        seats.add(new Seat("A3",270,A3,0));
+        seats.add(new Seat("A4",270,A4,0));
+        seats.add(new Seat("A5",270,A5,0));
+        seats.add(new Seat("A6",270,A6,0));
+        seats.add(new Seat("A7",270,A7,0));
+        seats.add(new Seat("A8",270,A8,0));
+
+        seats.add(new Seat("B1",270,B1,0));
+        seats.add(new Seat("B2",270,B2,0));
+        seats.add(new Seat("B3",270,B3,0));
+        seats.add(new Seat("B4",270,B4,0));
+        seats.add(new Seat("B5",270,B5,0));
+        seats.add(new Seat("B6",270,B6,0));
+        seats.add(new Seat("B7",270,B7,0));
+        seats.add(new Seat("B8",270,B8,0));
+
+        seats.add(new Seat("C1",270,C1,0));
+        seats.add(new Seat("C2",270,C2,0));
+        seats.add(new Seat("C3",270,C3,0));
+        seats.add(new Seat("C4",270,C4,0));
+        seats.add(new Seat("C5",270,C5,0));
+        seats.add(new Seat("C6",270,C6,0));
+        seats.add(new Seat("C7",270,C7,0));
+        seats.add(new Seat("C8",270,C8,0));
+
+        seats.add(new Seat("D1",270,D1,0));
+        seats.add(new Seat("D2",270,D2,0));
+        seats.add(new Seat("D3",270,D3,0));
+        seats.add(new Seat("D4",270,D4,0));
+        seats.add(new Seat("D5",270,D5,0));
+        seats.add(new Seat("D6",270,D6,0));
+        seats.add(new Seat("D7",270,D7,0));
+        seats.add(new Seat("D8",270,D8,0));
+
+       if (count == 0 ) {
+           addData(seats);
+       }
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
+            String line;
+            int i = 0;
+            while ((line = bufferedReader.readLine())!=null){
+                String [] dataFile = line.split(",");
+                String numberFile = dataFile[0];
+                double priceFile = Double.parseDouble(dataFile[1]);
+                int statusFile = Integer.parseInt(dataFile[2]);
+                System.out.println(line);
+                System.out.println(statusFile);
+                seats.get(i).setSeat(numberFile,priceFile,statusFile);
+                int temp = i;
+                seats.get(i).getImage().setOnMouseClicked(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        seats.get(temp).book();
+                    }
+                });
+                i++;
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void writeCheck() throws IOException {
+        Path path = Paths.get("check.txt");
+        FileWriter fileWriter = null;
+        fileWriter = new FileWriter("check.txt", true);
+        BufferedWriter bw = new BufferedWriter(fileWriter);
+        try {
+
+
+
+                bw.write("1");
+                bw.newLine();
+
+        }
+
+        finally {
+            if(bw != null) {
+                bw.close();
+            }
+        }
+    }
+
+
+
+    public void loadCheck() throws IOException {
+
+        Path path = Paths.get("check.txt");
+        BufferedReader br = Files.newBufferedReader(path);
+        String input;
+
+        try {
+            while ((input = br.readLine()) != null) {
+               this.count = Integer.parseInt(input);
+
+            }
+        }
+
+        finally {
+            if(br != null) {
+                br.close();
+            }
+        }
+    }
+
+    public void addData(List<Seat> seats) throws IOException {
+
+
+
+
+            Path path = Paths.get(filename);
+            FileWriter fileWriter;
+            fileWriter = new FileWriter(filename);
+            BufferedWriter bw = new BufferedWriter(fileWriter);
+            try {
+
+//                bw.write("A1,270,0");
+//                bw.newLine();
+//                bw.write("A2,270,0");
+//                bw.newLine();
+//                bw.write("A3,270,0");
+//                bw.newLine();
+//                bw.write("A4,270,0");
+//                bw.newLine();
+//                bw.write("A5,270,0");
+//                bw.newLine();
+//                bw.write("A6,270,0");
+//                bw.newLine();
+//                bw.write("A7,270,0");
+//                bw.newLine();
+//                bw.write("A8,270,0");
+//                bw.newLine();
+//
+//                bw.write("B1,270,0");
+//                bw.newLine();
+//                bw.write("B2,270,0");
+//                bw.newLine();
+//                bw.write("B3,270,0");
+//                bw.newLine();
+//                bw.write("B4,270,0");
+//                bw.newLine();
+//                bw.write("B5,270,0");
+//                bw.newLine();
+//                bw.write("B6,270,0");
+//                bw.newLine();
+//                bw.write("B7,270,0");
+//                bw.newLine();
+//                bw.write("B8,270,0");
+//                bw.newLine();
+//
+//                bw.write("C1,270,0");
+//                bw.newLine();
+//                bw.write("C2,270,0");
+//                bw.newLine();
+//                bw.write("C3,270,0");
+//                bw.newLine();
+//                bw.write("C4,270,0");
+//                bw.newLine();
+//                bw.write("C5,270,0");
+//                bw.newLine();
+//                bw.write("C6,270,0");
+//                bw.newLine();
+//                bw.write("C7,270,0");
+//                bw.newLine();
+//                bw.write("C8,270,0");
+//                bw.newLine();
+//
+//                bw.write("D1,270,0");
+//                bw.newLine();
+//                bw.write("D2,270,0");
+//                bw.newLine();
+//                bw.write("D3,270,0");
+//                bw.newLine();
+//                bw.write("D4,270,0");
+//                bw.newLine();
+//                bw.write("D5,270,0");
+//                bw.newLine();
+//                bw.write("D6,270,0");
+//                bw.newLine();
+//                bw.write("D7,270,0");
+//                bw.newLine();
+//                bw.write("D8,270,0");
+//                bw.newLine();
+
+                for (Seat i : seats){
+                   // System.out.println(i.getNumber()+","+i.getPrice()+","+i.getStatus());
+                    bw.write(i.getNumber()+","+i.getPrice()+","+i.getStatus());
+                    bw.newLine();
+                }
+
+            } finally {
+                if (bw != null) {
+                    bw.flush();
+                    bw.close();
+                }
+            }
+        }
+    public void storeBook() throws IOException {
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+            String line;
+            for (Seat i: seats) {
+                if(i.getStatus() == 1){
+                    line = i.getNumber()+","+i.getPrice()+","+2+"\n";
+                    i.setSeat(i.getNumber(),i.getPrice(),2);
+
+                    writeCheck();
+                }
+                else{
+                    line = i.getNumber()+","+i.getPrice()+","+i.getStatus()+"\n";
+
+                }
+                bw.write(line);
+            }
+            bw.close();
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    public void confirmBtn() throws IOException {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Booking Success");
+        alert.setHeaderText("Thanks you for Booking");
+        Optional<ButtonType> result = alert.showAndWait();
+
+        storeBook();
+    }
 
     public void goHomeFromThreatre1(ActionEvent a) {
         Button b = (Button) a.getSource();
