@@ -37,7 +37,7 @@ public class Threatre1_11_00Controller {
     @FXML
     Button confirm;
 
-
+    private String seat,price;
     private List<Seat> seats = new ArrayList<>();
     private String filename = "BookingData1_11_00.csv";
     private int count = 0;
@@ -184,27 +184,7 @@ public class Threatre1_11_00Controller {
         }
     }
 
-    public void storeBook() throws IOException {
-        try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
-            String line;
-            for (Seat i : seats) {
-                if (i.getStatus() == 1) {
-                    line = i.getNumber() + "," + i.getPrice() + "," + 2 + "\n";
-                    i.setSeat(i.getNumber(), i.getPrice(), 2);
 
-                    writeCheck();
-                } else {
-                    line = i.getNumber() + "," + i.getPrice() + "," + i.getStatus() + "\n";
-
-                }
-                bw.write(line);
-            }
-            bw.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 
 
     public void confirmBtn() throws IOException {
@@ -244,6 +224,78 @@ public class Threatre1_11_00Controller {
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
             stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    public void storeBook() throws IOException {
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+            String line;
+            String keep="";
+            String temp="";
+            double price =00.0;
+            for (Seat i : seats) {
+                if (i.getStatus() == 1) {
+                    keep +=  "-" +i.getNumber();
+                    price = price+i.getPrice();
+
+
+                    line = i.getNumber() + "," + i.getPrice() + "," + 2 + "\n";
+                    i.setSeat(i.getNumber(), i.getPrice(), 2);
+
+
+
+
+                    writeCheck();
+                } else {
+                    line = i.getNumber() + "," + i.getPrice() + "," + i.getStatus() + "\n";
+
+                }
+                bw.write(line);
+
+            }
+            System.out.println(keep);
+            temp += price;
+            this.seat = keep;
+            this.price = price+"";
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Ticket reserves");
+            alert.setHeaderText("Please keep this ticket(**Recommend the member to take photos of the slip \n" +
+                    "to prevent color fading) and Reservation Code \n" +
+                    "in order to collect the ticket(s) \n" +
+                    "and preventing fraud.");
+            alert.setContentText("You book success"+keep+"price "+temp);
+            Optional<ButtonType> result = alert.showAndWait();
+            bw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+    }
+
+
+    public void goReceipt(ActionEvent a) {
+
+
+        Button b = (Button) a.getSource();
+
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("receipt.fxml"));
+
+        try {
+            stage.setScene(new Scene(loader.load(), 1020, 573));
+            stage.centerOnScreen();
+            ReceiptController receiptController1 = loader.getController();
+            receiptController1.seatPayment(this.seat);
+            ReceiptController receiptController2 = loader.getController();
+            receiptController2.pricePayment(this.price);
             stage.show();
 
         } catch (IOException e1) {

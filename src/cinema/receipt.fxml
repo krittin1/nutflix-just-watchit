@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.ReceiptController">
+    <children>
+        <Button layoutX="914.0" layoutY="44.0" mnemonicParsing="false" onAction="#goHome" onMouseClicked="#goHome" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Home" textFill="#f8efef">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="147.0" layoutY="127.0" text="Customer Payment" textFill="#141414">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="144.0" layoutY="175.0" text="Nutflix accepts PayPal as a payment method if it is available in your region." textFill="#141414">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="149.0" layoutY="195.0" text="If you do not see PayPal as an option when signing up or updating your payment method, " textFill="#222121">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="149.0" layoutY="215.0" text="If you are having trouble getting Netflix to bill through your PayPal account, PayPal can provide the most up-to-date" textFill="#111010">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="144.0" layoutY="305.0" text="Receipt your account." textFill="#1e1e1e">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="471.0" fitWidth="756.0" layoutX="-214.0" layoutY="-286.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/nutflixlogo.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="149.0" layoutY="246.0" text="information on the types of payment they accept for Netflix transactions in your region." />
+      <Label layoutX="149.0" layoutY="278.0" text="If you need to update the payment method on your PayPal account, PayPal.com can help you with that as well." />
+      <Label layoutX="144.0" layoutY="366.0" text="Your Seat">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="426.0" text="Your Amount due">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="seat" layoutX="326.0" layoutY="368.0" text="Label" />
+      <Label fx:id="price" layoutX="326.0" layoutY="428.0" text="Label" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="611.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/paypal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="611.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LjZ8xyDYGp.png" />
+         </image>
+      </ImageView>
+    </children>
+</Pane>

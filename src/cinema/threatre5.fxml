@@ -270,5 +270,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <Button layoutX="756.0" layoutY="475.0" mnemonicParsing="false" onAction="#goReceipt" style="-fx-background-radius: 100;" text="Receipt" />
     </children>
 </Pane>

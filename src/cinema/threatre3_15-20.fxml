@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre4Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinema.Threatre3_15_20Controller">
     <children>
         <Pane layoutY="505.0" prefHeight="68.0" prefWidth="1020.0" style="-fx-background-color: grey;">
             <children>
@@ -23,7 +23,7 @@
                         <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
-                <Label layoutX="154.0" layoutY="21.0" text="550">
+                <Label layoutX="154.0" layoutY="21.0" text="450">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>
@@ -48,7 +48,7 @@
                         <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
-                <Label layoutX="651.0" layoutY="19.0" text="899">
+                <Label layoutX="651.0" layoutY="19.0" text="670">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>
@@ -295,13 +295,13 @@
         <Label layoutX="334.0" layoutY="391.0" text="3" textFill="#d9e809" />
         <Label layoutX="219.0" layoutY="391.0" text="2" textFill="#d9e809" />
         <Label layoutX="120.0" layoutY="391.0" text="1" textFill="#d9e809" />
-        <Button fx:id="gobackthreatre3" layoutX="27.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBackToMvie2" onMouseClicked="#goBackToMvie2" style="-fx-background-color: white; -fx-background-radius: 100;" text="Back" textFill="#eb0b0b" />
+        <Button fx:id="gobackthreatre3" layoutX="27.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBack" onMouseClicked="#goBack" style="-fx-background-color: white; -fx-background-radius: 100;" text="Back" textFill="#eb0b0b" />
         <Button fx:id="gohomethreatre3" layoutX="948.0" layoutY="475.0" mnemonicParsing="false" onAction="#goHomeFromThreatre1" onMouseClicked="#goHomeFromThreatre1" style="-fx-background-radius: 100;" text="Home" textFill="#f50a0a" />
-      <Button fx:id="confirm" layoutX="551.0" layoutY="470.0" mnemonicParsing="false" onAction="#confirmBtn" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#f5f0f0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="673.0" layoutY="475.0" mnemonicParsing="false" onAction="#goReceipt" onMouseClicked="#goReceipt" style="-fx-background-radius: 100;" text="Receipt" />
+        <Button fx:id="confirm" layoutX="551.0" layoutY="470.0" mnemonicParsing="false" onAction="#confirmBtn" onMouseClicked="#confirmBtn" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: green; -fx-background-radius: 100;" text="Book" textFill="#fcf9f9">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+      <Button layoutX="694.0" layoutY="475.0" mnemonicParsing="false" onAction="#goReceipt" onMouseClicked="#goReceipt" style="-fx-background-radius: 100;" text="Receipt" />
     </children>
 </Pane>

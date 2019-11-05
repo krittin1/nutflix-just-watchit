@@ -61,15 +61,28 @@ public class Movie3Controller extends Movie2Controller {
     }
 
     @Override
-    public void goThreatre3FromMovie1Time1(ActionEvent a) {
-        super.goThreatre3FromMovie1Time1(a);
-    }
-
-
-    @Override
     public void goThreatre3FromMovie1Time2(ActionEvent a) {
         super.goThreatre3FromMovie1Time2(a);
     }
+
+    @Override
+    public void goThreatre3FromMovie1Time1(ActionEvent a) {
+        Button b = (Button) a.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("threatre3_15-20.fxml"));
+        try {
+            stage.setScene(new Scene(loader.load(), 1020, 573));
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+    }
+
+
+
 
 
     @Override

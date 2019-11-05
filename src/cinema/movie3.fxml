@@ -169,7 +169,7 @@
         </ImageView>
         <Button fx:id="movie3threatre2time1" layoutX="306.0" layoutY="334.0" mnemonicParsing="false" onAction="#goThreatre2FromMovie2Time1" onMouseClicked="#goThreatre2FromMovie2Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="14:00" textFill="#ff0505" />
         <Button fx:id="movie3threatre3time1" layoutX="306.0" layoutY="503.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time1" onMouseClicked="#goThreatre3FromMovie1Time1" style="-fx-background-color: gold; -fx-border-color: red;" text="15:20" textFill="#ff0505" />
-        <Button fx:id="movie3threatre3time2" layoutX="365.0" layoutY="503.0" mnemonicParsing="false" onAction="#goThreatre3FromMovie1Time2" onMouseClicked="#goThreatre3FromMovie1Time2" style="-fx-background-color: black; -fx-border-color: red;" text="20:40" textFill="#f80a0a" />
+        <Button fx:id="movie3threatre3time2" layoutX="365.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: red;" text="20:40" textFill="#f80a0a" />
         <Button fx:id="movie3detailBtn" layoutX="947.0" layoutY="59.0" mnemonicParsing="false" onAction="#goMovieDetail1FromMovie3" onMouseClicked="#goMovieDetail1FromMovie3" style="-fx-background-color: red; -fx-background-radius: 100;" text="Detail" textFill="#fffbfb" />
       <Button fx:id="movie3homeBtn" layoutX="946.0" layoutY="516.0" mnemonicParsing="false" onAction="#goHomeFromMovie1" style="-fx-background-color: red; -fx-background-radius: 100;" text="Home" textFill="#fffbfb" />
           <Line endX="954.0" layoutX="66.0" layoutY="224.0" startX="-100.0" stroke="#f50303" />

@@ -192,28 +192,6 @@ public class Threatre5_17_00Controller {
             }
         }
     }
-    public void storeBook() throws IOException {
-        try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
-            String line;
-            for (Seat i: seats) {
-                if(i.getStatus() == 1){
-                    line = i.getNumber()+","+i.getPrice()+","+2+"\n";
-                    i.setSeat(i.getNumber(),i.getPrice(),2);
-
-                    writeCheck();
-                }
-                else{
-                    line = i.getNumber()+","+i.getPrice()+","+i.getStatus()+"\n";
-
-                }
-                bw.write(line);
-            }
-            bw.close();
-        }catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 
 
 
@@ -274,6 +252,50 @@ public class Threatre5_17_00Controller {
 
         } catch (IOException e1) {
             e1.printStackTrace();
+        }
+    }
+
+
+
+    public void storeBook() throws IOException {
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+            String line;
+            String keep="";
+            String temp="";
+            double price =00.0;
+            for (Seat i : seats) {
+                if (i.getStatus() == 1) {
+                    keep +=  "-" +i.getNumber();
+                    price = price+i.getPrice();
+
+                    line = i.getNumber() + "," + i.getPrice() + "," + 2 + "\n";
+                    i.setSeat(i.getNumber(), i.getPrice(), 2);
+
+
+
+
+                    writeCheck();
+                } else {
+                    line = i.getNumber() + "," + i.getPrice() + "," + i.getStatus() + "\n";
+
+                }
+                bw.write(line);
+
+            }
+            System.out.println(keep);
+            temp += price;
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Ticket reserves");
+            alert.setHeaderText("Please keep this ticket(**Recommend the member to take photos of the slip \n" +
+                    "to prevent color fading) and Reservation Code \n" +
+                    "in order to collect the ticket(s) \n" +
+                    "and preventing fraud.");
+            alert.setContentText("You book success"+keep+"price "+temp);
+            Optional<ButtonType> result = alert.showAndWait();
+            bw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }

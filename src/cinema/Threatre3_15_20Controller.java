@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Threatre4Controller {
+public class Threatre3_15_20Controller {
     @FXML
     ImageView A1,A2,A3,A4,A5,A6,A7;
 
@@ -38,21 +38,21 @@ public class Threatre4Controller {
 
 
     private List<Seat> seats = new ArrayList<>();
-    private String filename  = "BookingData4.csv";
+    private String filename  = "BookingData3_15_20.csv";
     private int count=0;
     private String seat,price;
 
 
     public void initialize() throws IOException {
 
-        File file = new File("BookingData4.csv");
+        File file = new File("BookingData3_15_20.csv");
         try {
             file.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        File file2 = new File("check4.txt");
+        File file2 = new File("check3_15_20.txt");
         try {
             file2.createNewFile();
         } catch (IOException e) {
@@ -62,42 +62,42 @@ public class Threatre4Controller {
         loadCheck();
 
 
-        seats.add(new Seat("A1",899,A1,0));
-        seats.add(new Seat("A2",899,A2,0));
-        seats.add(new Seat("A3",899,A3,0));
-        seats.add(new Seat("A4",899,A4,0));
-        seats.add(new Seat("A5",899,A5,0));
-        seats.add(new Seat("A6",899,A6,0));
-        seats.add(new Seat("A7",899,A7,0));
+        seats.add(new Seat("A1",670,A1,0));
+        seats.add(new Seat("A2",670,A2,0));
+        seats.add(new Seat("A3",670,A3,0));
+        seats.add(new Seat("A4",670,A4,0));
+        seats.add(new Seat("A5",670,A5,0));
+        seats.add(new Seat("A6",670,A6,0));
+        seats.add(new Seat("A7",670,A7,0));
 
 
-        seats.add(new Seat("B1",899,B1,0));
-        seats.add(new Seat("B2",899,B2,0));
-        seats.add(new Seat("B3",899,B3,0));
-        seats.add(new Seat("B4",899,B4,0));
-        seats.add(new Seat("B5",899,B5,0));
-        seats.add(new Seat("B6",899,B6,0));
-        seats.add(new Seat("B7",899,B7,0));
+        seats.add(new Seat("B1",670,B1,0));
+        seats.add(new Seat("B2",670,B2,0));
+        seats.add(new Seat("B3",670,B3,0));
+        seats.add(new Seat("B4",670,B4,0));
+        seats.add(new Seat("B5",670,B5,0));
+        seats.add(new Seat("B6",670,B6,0));
+        seats.add(new Seat("B7",670,B7,0));
 
-        seats.add(new Seat("C1",550,C1,0));
-        seats.add(new Seat("C2",550,C2,0));
-        seats.add(new Seat("C3",550,C3,0));
-        seats.add(new Seat("C4",550,C4,0));
-        seats.add(new Seat("C5",550,C5,0));
-        seats.add(new Seat("C6",550,C6,0));
-        seats.add(new Seat("C7",550,C7,0));
-        seats.add(new Seat("C8",550,C8,0));
+        seats.add(new Seat("C1",450,C1,0));
+        seats.add(new Seat("C2",450,C2,0));
+        seats.add(new Seat("C3",450,C3,0));
+        seats.add(new Seat("C4",450,C4,0));
+        seats.add(new Seat("C5",450,C5,0));
+        seats.add(new Seat("C6",450,C6,0));
+        seats.add(new Seat("C7",450,C7,0));
+        seats.add(new Seat("C8",450,C8,0));
 
 
 
-        seats.add(new Seat("D1",550,D1,0));
-        seats.add(new Seat("D2",550,D2,0));
-        seats.add(new Seat("D3",550,D3,0));
-        seats.add(new Seat("D4",550,D4,0));
-        seats.add(new Seat("D5",550,D5,0));
-        seats.add(new Seat("D6",550,D6,0));
-        seats.add(new Seat("D7",550,D7,0));
-        seats.add(new Seat("C8",550,D8,0));
+        seats.add(new Seat("D1",450,D1,0));
+        seats.add(new Seat("D2",450,D2,0));
+        seats.add(new Seat("D3",450,D3,0));
+        seats.add(new Seat("D4",450,D4,0));
+        seats.add(new Seat("D5",450,D5,0));
+        seats.add(new Seat("D6",450,D6,0));
+        seats.add(new Seat("D7",450,D7,0));
+        seats.add(new Seat("D8",450,D8,0));
 
 
         if (count == 0 ) {
@@ -128,9 +128,9 @@ public class Threatre4Controller {
     }
 
     public void writeCheck() throws IOException {
-        Path path = Paths.get("check4.txt");
+        Path path = Paths.get("check3_15_20.txt");
         FileWriter fileWriter = null;
-        fileWriter = new FileWriter("check4.txt", true);
+        fileWriter = new FileWriter("check3_15_20.txt", true);
         BufferedWriter bw = new BufferedWriter(fileWriter);
         try {
 
@@ -152,7 +152,7 @@ public class Threatre4Controller {
 
     public void loadCheck() throws IOException {
 
-        Path path = Paths.get("check4.txt");
+        Path path = Paths.get("check3_15_20.txt");
         BufferedReader br = Files.newBufferedReader(path);
         String input;
 
@@ -227,11 +227,13 @@ public class Threatre4Controller {
     }
 
 
-    public void goBackFromThreatre1(ActionEvent a) {
+
+
+    public void goBack(ActionEvent a) {
         Button b = (Button) a.getSource();
 
         Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie3.fxml"));
 
         try {
             stage.setScene(new Scene(loader.load(), 1020, 573));
@@ -242,23 +244,6 @@ public class Threatre4Controller {
             e1.printStackTrace();
         }
     }
-
-    public void goBackToMvie2(ActionEvent a) {
-        Button b = (Button) a.getSource();
-
-        Stage stage = (Stage) b.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("movie2.fxml"));
-
-        try {
-            stage.setScene(new Scene(loader.load(), 1020, 573));
-            stage.centerOnScreen();
-            stage.show();
-
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-    }
-
 
     public void storeBook() throws IOException {
         try {
@@ -308,7 +293,6 @@ public class Threatre4Controller {
 
 
     }
-
 
 
 

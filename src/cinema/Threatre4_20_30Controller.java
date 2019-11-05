@@ -86,7 +86,7 @@ public class Threatre4_20_30Controller {
         seats.add(new Seat("C5",550,C5,0));
         seats.add(new Seat("C6",550,C6,0));
         seats.add(new Seat("C7",550,C7,0));
-        seats.add(new Seat("C7",550,C8,0));
+        seats.add(new Seat("C8",550,C8,0));
 
 
 
@@ -97,7 +97,7 @@ public class Threatre4_20_30Controller {
         seats.add(new Seat("D5",550,D5,0));
         seats.add(new Seat("D6",550,D6,0));
         seats.add(new Seat("D7",550,D7,0));
-        seats.add(new Seat("C7",550,D8,0));
+        seats.add(new Seat("C8",550,D8,0));
 
 
         if (count == 0 ) {
@@ -195,28 +195,7 @@ public class Threatre4_20_30Controller {
             }
         }
     }
-    public void storeBook() throws IOException {
-        try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
-            String line;
-            for (Seat i: seats) {
-                if(i.getStatus() == 1){
-                    line = i.getNumber()+","+i.getPrice()+","+2+"\n";
-                    i.setSeat(i.getNumber(),i.getPrice(),2);
 
-                    writeCheck();
-                }
-                else{
-                    line = i.getNumber()+","+i.getPrice()+","+i.getStatus()+"\n";
-
-                }
-                bw.write(line);
-            }
-            bw.close();
-        }catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 
 
 
@@ -277,6 +256,49 @@ public class Threatre4_20_30Controller {
 
         } catch (IOException e1) {
             e1.printStackTrace();
+        }
+    }
+
+
+    public void storeBook() throws IOException {
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+            String line;
+            String keep="";
+            String temp="";
+            double price =00.0;
+            for (Seat i : seats) {
+                if (i.getStatus() == 1) {
+                    keep +=  "-" +i.getNumber();
+                    price = price+i.getPrice();
+
+                    line = i.getNumber() + "," + i.getPrice() + "," + 2 + "\n";
+                    i.setSeat(i.getNumber(), i.getPrice(), 2);
+
+
+
+
+                    writeCheck();
+                } else {
+                    line = i.getNumber() + "," + i.getPrice() + "," + i.getStatus() + "\n";
+
+                }
+                bw.write(line);
+
+            }
+            System.out.println(keep);
+            temp += price;
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Ticket reserves");
+            alert.setHeaderText("Please keep this ticket(**Recommend the member to take photos of the slip \n" +
+                    "to prevent color fading) and Reservation Code \n" +
+                    "in order to collect the ticket(s) \n" +
+                    "and preventing fraud.");
+            alert.setContentText("You book success"+keep+"price "+temp);
+            Optional<ButtonType> result = alert.showAndWait();
+            bw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
